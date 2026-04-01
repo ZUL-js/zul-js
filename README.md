@@ -19,6 +19,7 @@ This command reads the package.json file and fetches all required libraries (Ele
 
 
 npm install
+
 Development and Usage
 
 1. Start the Vite server:
