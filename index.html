@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZUL.js Visualizer</title>
+</head>
+<body class="font-sans text-gray-600 bg-white dark:bg-slate-900 dark:text-white transition-colors duration-300">
+  <div class="h-screen flex flex-col overflow-hidden">
+    <header class="h-14 border-b flex items-center justify-between px-6 bg-white dark:bg-slate-800 dark:border-slate-700">
+      <h1 class="text-xl font-bold text-gray-800 dark:text-white">ZUL<span class="text-green-500">.js</span></h1>
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-700 transition">
+        <i id="theme-icon" data-lucide="moon"></i>
+      </button>
+    </header>
+
+    <div class="flex flex-1 overflow-hidden">
+      <aside class="w-72 p-6 border-r dark:border-slate-700 flex flex-col gap-6 bg-gray-50 dark:bg-slate-800/50">
+        <div>
+          <label class="text-xs uppercase tracking-wider font-bold text-gray-400 mb-2 block">Visual Type</label>
+          <select id="chart-type" class="w-full p-2.5 rounded-lg border dark:border-slate-600 bg-white dark:bg-slate-800 outline-none focus:ring-2 focus:ring-green-500">
+            <option value="bar">Bar Chart</option>
+            <option value="pie">Pie Chart</option>
+            <option value="line">Line Chart</option>
+            <option value="sankey">Sankey Diagram</option>
+            <option value="flowchart">Flowchart</option>
+          </select>
+        </div>
+
+        <button id="render-btn" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-xl transition-all shadow-lg shadow-green-200 dark:shadow-none">
+          Generate Visual
+        </button>
+      </aside>
+
+      <main class="flex-1 p-10 overflow-auto flex items-center justify-center">
+        <div id="chart-container" class="w-full max-w-5xl bg-white dark:bg-slate-800 p-10 rounded-2xl shadow-sm border dark:border-slate-700 min-h-[500px] flex items-center justify-center">
+          </div>
+      </main>
+    </div>
+  </div>
+  <script type="module" src="/renderer.js"></script>
+</body>
+</html>
