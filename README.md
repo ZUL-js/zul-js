@@ -11,7 +11,7 @@ Setup:
 Clone the repository:
 
 
-git clone https://github.com/YOUR_USERNAME/ZUL.js.git
+git clone https://github.com/ZUL-js/zul-js.git
 cd ZUL.js
 
 Install dependencies:
