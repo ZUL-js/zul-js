@@ -15,7 +15,6 @@ git clone https://github.com/ZUL-js/zul-js.git
 cd ZUL.js
 ```
 Install dependencies:
-This command reads the package.json file and fetches all required libraries (Electron, Vite, Mermaid.js, Tailwind CSS).
 
 ```
 npm install
