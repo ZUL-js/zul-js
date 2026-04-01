@@ -21,13 +21,13 @@ This command reads the package.json file and fetches all required libraries (Ele
 npm install
 Development and Usage
 
-1. Start the Vite server
+1. Start the Vite server:
 In your first terminal window, run the development server:
 
 
 npm run dev
 
-2. Launch ZUL.js
+2. Launch ZUL.js:
 In a second terminal window, launch the Electron desktop application:
 
 
